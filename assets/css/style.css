@@ -1,0 +1,232 @@
+:root {
+    color-scheme: dark light !important;
+
+    --color-00: #40a0ef;
+}
+
+/* Card */
+section.container-cadastrar {
+    padding: 20px;
+}
+
+section.container-cadastrar div.container-cadastrar-cartao {
+    padding: 30px;
+    border-radius: 1rem;
+    background-color: var(--color-00);
+}
+
+section.container-cadastrar div.container-cadastrar-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+section.container-cadastrar div.container-cadastrar-button button.button {
+    height: 50px;
+    /* width: 150px; */
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: rgb(134, 194, 254);
+}
+
+section.container-cadastrar div.container-cadastrar-button button.button:hover {
+    transition: 0.3s;
+    color: rgb(186, 223, 243);
+    background-color: rgb(34, 127, 203);
+}
+
+section.container-cadastrar div.container-cadastrar-cartao div.container-cadastrar-info h1.titulo {
+    width: 100%;
+    /* font-size: 2.3rem; */
+    font-size: 1.85rem;
+    color: #fff;
+}
+
+section.container-cadastrar div.container-cadastrar-cartao div.container-cadastrar-info p.subtitulo {
+    font-size: 0.8rem;
+    color: rgba(232, 232, 232, 0.825)
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Items */
+div.container-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+div.container-itens {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(39, 39, 39);
+}
+
+div.container-itens div.item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+div.container-itens div.item span.titulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(185, 185, 185);
+}
+
+div.container-itens div.item span.subtitulo {
+    font-size: 1.1rem;
+    margin: 1px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Offcanvas (Menu) */
+div.offcanvas {
+    overflow-y: auto;
+    background-color: rgb(25, 25, 25);
+}
+
+div.offcanvas header.container-offcanvas-header {
+    margin-top: 70px;
+    padding: 1.8rem 1.8rem 0;
+}
+
+div.offcanvas header.container-offcanvas-header:after {
+    content: "_______________________________";
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 10px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.081);
+}
+
+div.offcanvas header.container-offcanvas-header h2.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+div.offcanvas header.container-offcanvas-header p.subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.15rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.537);
+}
+
+button.button.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 100%;
+    transform: translate(-50%, -50%) !important;
+    background-color: var(--color-00);
+}
+
+button.button.close i {
+    font-size: 27px;
+    line-height: 32px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* inputs */
+div.container-inputs div.container-inputs-items {
+    padding: 0 27px;
+}
+
+div.container-inputs div.container-inputs-items div.container-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+div.container-inputs div.container-inputs-items div.container-enviar button {
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 0.7rem;
+    color: #fff;
+    background-color: rgb(134, 194, 254);
+}
+
+button.button.search {
+    width: 60px;
+    margin: 6px 0;
+    margin-left: 15px;
+    border: none;
+    border-radius: 0.9rem;
+    color: #fff;
+    background-color: rgb(134, 194, 254);
+}
+
+label.label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 15px 0;
+    color: rgba(231, 231, 231, 0.87);
+}
+
+input.input {
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    margin: 6px 0;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: rgb(39, 39, 39);
+}
+
+input.input:focus {
+    outline: 2px solid var(--color-00);
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.active-border {
+    border: 2px solid var(--color-00);
+}
+
+.disable {
+    display: none;
+}
+
+/* Themes */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(25, 25, 25) !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="color-scheme" content="dark light">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="main">
+    <main>
+        <!-- Section (Cadastrar) -->
+        <section class="container-cadastrar">
+
+            <!-- Container (Cartão) -->
+            <div class="container-cadastrar-cartao">
+
+                <!--  Container (Texto de Informações) -->
+                <div class="container-cadastrar-info">
+                    <h1 class="titulo">Sistema de Armazenamento</h1>
+                    <p class="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore!</p>
+                </div>
+
+                <!-- Container (Botão - cadastrar) -->
+                <div class="container-cadastrar-button">
+                    <button class="button" data-bs-toggle="offcanvas" data-bs-target="#cadastrar">Cadastrar</button>
+                </div>
+            </div>
+
+            <!-- Container (Tabela) -->
+            <div class="container-tabela">
+
+                <div class="container-header">
+                    <input type="text" placeholder="Pesquise aqui..." class="input">
+
+                    <button class="button search">
+                        <i class='bx bx-search-alt'></i>
+                    </button>
+                </div>
+
+                <div class="container-itens" ng-repeat="produto in produtos">
+
+                    <div class="container-itens-principais">
+
+                        <div class="item item-nome">
+                            <span class="titulo">Nome:</span>
+                            <span class="subtitulo">{{produto.nome}}</span>
+                        </div>
+                    </div>
+
+                    <div class="container-itens-secundarios disable">
+
+                        <div class="item item-modelo">
+                            <span class="titulo">Modelo:</span>
+                            <span class="subtitulo">{{produto.modelo}}</span>
+                        </div>
+
+                        <div class="item item-codigo">
+                            <span class="titulo">Codigo:</span>
+                            <span class="subtitulo">{{produto.codigo}}</span>
+                        </div>
+
+                        <div class="item item-valor">
+                            <span class="titulo">Valor:</span>
+                            <span class="subtitulo">{{produto.valor}}</span>
+                        </div>
+
+                        <div class="item item-data">
+                            <span class="titulo">Data:</span>
+                            <span class="subtitulo">{{produto.data}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Cadastrar -->
+            <div class="offcanvas offcanvas-end" id="cadastrar">
+
+                <!-- Botâo (Close) -->
+                <button class="button close" data-bs-dismiss="offcanvas">
+                    <i class='bx bxs-x-circle'></i>
+                </button>
+
+                <!-- Container (header) -->
+                <header class="container-offcanvas-header">
+                    <h2 class="titulo">Cadastrar</h2>
+                    <p class="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore!</p>
+                </header>
+
+                <!-- Container (Inputs) -->
+                <div class="container-inputs">
+
+                    <div class="container-inputs-items">
+
+                        <!-- Codigo -->
+                        <label for="codigo-produto" class="label codigo-produto">Codigo:
+                            <input type="text" placeholder="Coloque aqui..." class="input codigo-produto"
+                                id="codigo-produto" ng-model="produtos.codigo">
+                        </label>
+
+                        <!-- Nome -->
+                        <label for="nome-produto" class="label nome-produto">Nome do Produto:
+                            <input type="text" placeholder="Coloque aqui..." class="input nome-produto"
+                                id="nome-produto" ng-model="produtos.nome">
+                        </label>
+
+                        <!-- Modelo -->
+                        <label for="modelo-produto" class="label modelo-produto">Modelo:
+                            <input type="text" placeholder="Coloque aqui..." class="input modelo-produto"
+                                id="modelo-produto" ng-model="produtos.modelo">
+                        </label>
+
+                        <!-- Valor -->
+                        <label for="valor-produto" class="label valor-produto">Valor:
+                            <input type="text" placeholder="Coloque aqui..." class="input valor-produto"
+                                id="valor-produto" ng-model="produtos.valor">
+                        </label>
+
+                        <!-- Data -->
+                        <label for="data-produto" class="label data-produto">Data da Inserção:
+                            <input type="text" placeholder="Coloque aqui..." class="input data-produto"
+                                id="data-produto" ng-model="produtos.data">
+                        </label>
+
+                        <!-- Enviar -->
+                        <div class="container-enviar">
+                            <button id="enviar" ng-click="setProduto(produtos)">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="lib/node_modules/angular/angular.min.js"></script>
+    <script src="assets/js/controllers/main.js"></script>
+    <script src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
