@@ -1,8 +1,16 @@
 angular.module('app', []).controller('main', function ($scope, $rootScope, $http) {
 
-    $scope.produtos = [
-        { codigo: '01', nome: 'Loot-box', modelo: 'Caixa', valor: 'R$ 40,00', data: '22/08/2022' },
-    ]
+    $http({ method: 'GET', url: "assets/json/dados.json" }).then(successCallback, errorCallback)
+
+    function successCallback(response) {
+        console.log(response.data.produtos);
+
+        $scope.produtos = response.data.produtos
+    }
+
+    function errorCallback(response) {
+        console.error(response);
+    }
 
     $('body').on('click', '.container-itens', function () {
 
@@ -10,7 +18,8 @@ angular.module('app', []).controller('main', function ($scope, $rootScope, $http
         $(this).find('.container-itens-secundarios').slideToggle()
     })
 
-    $scope.setProduto = function (testes) {
-        $scope.produtos.push(testes)
+    $scope.setProduto = function (get) {
+        $scope.produtos.push(get)
+        $('#cadastrar').offcanvas('hide');
     }
 });

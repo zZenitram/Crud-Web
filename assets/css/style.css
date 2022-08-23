@@ -2,6 +2,13 @@
     color-scheme: dark light !important;
 
     --color-00: #40a0ef;
+
+    --gray-scale-00: rgb(255, 255, 255);
+    --gray-scale-02: rgb(215, 215, 215);
+    --gray-scale-03: rgb(185, 185, 185);
+    --gray-scale-04: rgb(184, 181, 181);
+    --gray-scale-09: rgb(25, 25, 25);
+    --gray-scale-10: rgb(39, 39, 39);
 }
 
 /* Card */
@@ -30,7 +37,7 @@ section.container-cadastrar div.container-cadastrar-button button.button {
     font-weight: 600;
     border: none;
     border-radius: 1rem;
-    color: #fff;
+    color: var(--gray-scale-00);
     background-color: rgb(134, 194, 254);
 }
 
@@ -44,12 +51,12 @@ section.container-cadastrar div.container-cadastrar-cartao div.container-cadastr
     width: 100%;
     /* font-size: 2.3rem; */
     font-size: 1.85rem;
-    color: #fff;
+    color: var(--gray-scale-00);
 }
 
 section.container-cadastrar div.container-cadastrar-cartao div.container-cadastrar-info p.subtitulo {
     font-size: 0.8rem;
-    color: rgba(232, 232, 232, 0.825)
+    color: var(--gray-scale-02)
 }
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -69,8 +76,8 @@ div.container-itens {
     margin: 10px 0;
     border-radius: 10px;
     cursor: pointer;
-    color: #fff;
-    background-color: rgb(39, 39, 39);
+    color: var(--gray-scale-00);
+    background-color: var(--gray-scale-10);
 }
 
 div.container-itens div.item {
@@ -84,7 +91,7 @@ div.container-itens div.item {
 div.container-itens div.item span.titulo {
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(185, 185, 185);
+    color: var(--gray-scale-03);
 }
 
 div.container-itens div.item span.subtitulo {
@@ -97,7 +104,7 @@ div.container-itens div.item span.subtitulo {
 /* Offcanvas (Menu) */
 div.offcanvas {
     overflow-y: auto;
-    background-color: rgb(25, 25, 25);
+    background-color: var(--gray-scale-09);
 }
 
 div.offcanvas header.container-offcanvas-header {
@@ -120,7 +127,7 @@ div.offcanvas header.container-offcanvas-header h2.titulo {
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--gray-scale-00);
 }
 
 div.offcanvas header.container-offcanvas-header p.subtitulo {
@@ -131,7 +138,7 @@ div.offcanvas header.container-offcanvas-header p.subtitulo {
     padding: 0.15rem 1rem;
     margin: 0;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.537);
+    color: var(--gray-scale-04);
 }
 
 button.button.close {
@@ -174,7 +181,7 @@ div.container-inputs div.container-inputs-items div.container-enviar button {
     width: 70%;
     border: none;
     border-radius: 0.7rem;
-    color: #fff;
+    color: var(--gray-scale-00);
     background-color: rgb(134, 194, 254);
 }
 
@@ -184,7 +191,7 @@ button.button.search {
     margin-left: 15px;
     border: none;
     border-radius: 0.9rem;
-    color: #fff;
+    color: var(--gray-scale-00);
     background-color: rgb(134, 194, 254);
 }
 
@@ -194,7 +201,7 @@ label.label {
     align-items: start;
     justify-content: center;
     margin: 15px 0;
-    color: rgba(231, 231, 231, 0.87);
+    color: var(--gray-scale-04);
 }
 
 input.input {
@@ -205,7 +212,7 @@ input.input {
     border: none;
     border-radius: 1rem;
     box-shadow: none;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--gray-scale-10);
 }
 
 input.input:focus {
@@ -225,8 +232,16 @@ input.input:focus {
 /* Themes */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(25, 25, 25) !important;
+        background-color: var(--gray-scale-09) !important;
     }
 }
 
-@media (prefers-color-scheme: light) {}
+@media (prefers-color-scheme: light) {
+    :root {
+        --gray-scale-00: rgb(39, 39, 39);
+        --gray-scale-03: rgb(25, 25, 25);
+        --gray-scale-04: rgb(35, 35, 35);
+        --gray-scale-09: rgb(227, 227, 227);
+        --gray-scale-10: rgb(240, 240, 240);
+    }
+}

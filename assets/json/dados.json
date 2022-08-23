@@ -1,0 +1,11 @@
+{
+    "produtos": [
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Jordan",
+            "modelo": "Tênis",
+            "valor": "R$ 1300,00",
+            "data": "22/08/2022"
+        }
+    ]
+}
