@@ -156,13 +156,14 @@ input.input {
     padding: 1rem;
     margin: 6px 0;
     border: none;
+    outline: 2px solid var(--color-01);
     border-radius: 1rem;
     box-shadow: none;
     background-color: var(--gray-scale-10);
 }
 
 input.input:focus {
-    outline: 2px solid var(--color-01);
+    outline: 2px solid var(--color-00);
 }
 
 .active-border {
