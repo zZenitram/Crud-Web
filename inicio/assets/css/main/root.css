@@ -1,0 +1,38 @@
+:root {
+    color-scheme: dark light !important;
+
+    --color-00: #86c2fe;
+    --color-01: #40a0ef;
+
+    --gray-scale-00: rgb(255, 255, 255);
+    --gray-scale-02: rgb(215, 215, 215);
+    --gray-scale-03: rgb(185, 185, 185);
+    --gray-scale-04: rgb(184, 181, 181);
+    --gray-scale-09: rgb(25, 25, 25);
+    --gray-scale-10: rgb(39, 39, 39);
+}
+
+/* Themes */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--gray-scale-09) !important;
+    }
+
+    .titulo {
+        color: var(--gray-scale-00);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --gray-scale-00: rgb(39, 39, 39);
+        --gray-scale-03: rgb(25, 25, 25);
+        --gray-scale-04: rgb(35, 35, 35);
+        --gray-scale-09: rgb(227, 227, 227);
+        --gray-scale-10: rgb(240, 240, 240);
+    }
+
+    .titulo {
+        color: var(--gray-scale-00);
+    }
+}

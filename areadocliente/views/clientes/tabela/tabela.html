@@ -1,0 +1,48 @@
+<div class="container-itens" ng-repeat="cliente in clientes | filter:search">
+
+    <div class="container-itens-principais">
+
+        <div class="item item-nome">
+            <span class="titulo">Nome:</span>
+            <span class="subtitulo">{{cliente.nome}} {{cliente.sobrenome}}</span>
+        </div>
+
+        <div class="item arrow">
+            <i class='bx bx-chevron-right arrow'></i>
+        </div>
+    </div>
+
+    <div class="container-itens-secundarios disable">
+
+        <div class="item separator top item-rg">
+            <span class="titulo">RG:</span>
+            <span class="subtitulo">{{cliente.rg}}</span>
+        </div>
+
+        <div class="item separator item-cpf">
+            <span class="titulo">CPF:</span>
+            <span class="subtitulo">{{cliente.cpf}}</span>
+        </div>
+
+        <div class="item separator item-email">
+            <span class="titulo">Email:</span>
+            <span class="subtitulo">{{cliente.email}}</span>
+        </div>
+
+        <div class="item separator item-telefone">
+            <span class="titulo">Telefone:</span>
+            <span class="subtitulo">{{cliente.telefone}}</span>
+        </div>
+
+        <div class="item separator item-celular">
+            <span class="titulo">Celular:</span>
+            <span class="subtitulo">{{cliente.celular}}</span>
+        </div>
+
+        <div class="item item-editar">
+            <button class="button update">
+                <span>Editar</span>
+            </button>
+        </div>
+    </div>
+</div>

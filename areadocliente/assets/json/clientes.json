@@ -1,0 +1,40 @@
+{
+    "clientes": [
+        {
+            "nome": "Lucas",
+            "sobrenome": "Martinez",
+            "rg": "38.879.049-0",
+            "cpf": "420.282.438-56",
+            "email": "lucas.martinez799@gmail.com",
+            "telefone": "(11) 4693-0000",
+            "celular": "(11) 94550-0161"
+        },
+        {
+            "nome": "Lucas",
+            "sobrenome": "Martinez",
+            "rg": "38.879.049-0",
+            "cpf": "420.282.438-56",
+            "email": "lucas.martinez799@gmail.com",
+            "telefone": "(11) 4693-0000",
+            "celular": "(11) 94550-0161"
+        },
+        {
+            "nome": "Lucas",
+            "sobrenome": "Martinez",
+            "rg": "38.879.049-0",
+            "cpf": "420.282.438-56",
+            "email": "lucas.martinez799@gmail.com",
+            "telefone": "(11) 4693-0000",
+            "celular": "(11) 94550-0161"
+        },
+        {
+            "nome": "Lucas",
+            "sobrenome": "Martinez",
+            "rg": "38.879.049-0",
+            "cpf": "420.282.438-56",
+            "email": "lucas.martinez799@gmail.com",
+            "telefone": "(11) 4693-0000",
+            "celular": "(11) 94550-0161"
+        }
+    ]
+}

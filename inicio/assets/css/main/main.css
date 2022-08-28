@@ -1,0 +1,166 @@
+section.container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+section.container-inicio div.container-inicio-cartao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    padding: 60px;
+    border-radius: 1rem;
+    background-color: var(--color-01);
+}
+
+section.container-inicio div.container-inicio-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+section.container-inicio div.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.container-inicio div.container-inicio-button button.button {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    color: var(--gray-scale-00);
+    background-color: rgb(134, 194, 254);
+}
+
+section.container-inicio div.container-inicio-button button.button:hover {
+    transition: 0.3s;
+    color: rgb(186, 223, 243);
+    background-color: rgb(34, 127, 203);
+}
+
+section.container-inicio div.container-inicio-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+section.container-inicio div.container-inicio-info h1.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--gray-scale-00);
+}
+
+section.container-inicio div.container-inicio-info p.subtitulo {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gray-scale-02)
+}
+
+div.container-buttons div.container-entrar-button,
+div.container-buttons div.container-registrar-button {
+    width: 50%;
+    padding: 15px;
+}
+
+/* ------------------------------------------------------------- */
+
+main#view {
+    position: relative;
+    margin-top: 0;
+    transition: 0.6s;
+    z-index: 0;
+}
+
+button.button {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid var(--color-00);
+    border-radius: 1rem;
+    color: var(--gray-scale-00);
+    background-color: transparent;
+}
+
+button.button:disabled {
+    border: none;
+    color: rgb(80, 78, 78);
+    background-color: rgb(34, 33, 33);
+}
+
+
+button.button.inicio {
+    height: 70px !important;
+}
+
+button.button.solid {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    color: var(--gray-scale-00);
+    background-color: var(--color-01);
+}
+
+button.button.search {
+    width: 60px;
+    margin: 6px 0;
+    margin-left: 15px;
+    border: none;
+    border-radius: 0.9rem;
+    color: var(--gray-scale-00);
+    background-color: rgb(134, 194, 254);
+}
+
+button.button.update {
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+label.label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 15px 0;
+    color: var(--gray-scale-04);
+}
+
+input.input {
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    margin: 6px 0;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: var(--gray-scale-10);
+}
+
+input.input:focus {
+    outline: 2px solid var(--color-01);
+}
+
+.active-border {
+    border: 2px solid var(--color-01);
+}
+
+.disable {
+    display: none;
+}
