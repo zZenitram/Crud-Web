@@ -9,7 +9,7 @@ app.config(function ($routeProvider, $locationProvider) {
 
         .when('/entrar', {
             templateUrl: 'views/entrar/entrar.html',
-            controller: 'entrarController',
+            controller: 'main',
         })
 
         .when('/registrar', {

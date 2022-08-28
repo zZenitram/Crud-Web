@@ -85,7 +85,8 @@ main#view {
     z-index: 0;
 }
 
-button.button {
+button.button,
+a.button {
     height: 50px;
     width: 100%;
     font-size: 1.2rem;
@@ -96,18 +97,25 @@ button.button {
     background-color: transparent;
 }
 
-button.button:disabled {
+a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 35px 0;
+    color: #fff;
+}
+
+button.button:disabled,
+a[disabled] {
+    pointer-events: none;
     border: none;
     color: rgb(80, 78, 78);
     background-color: rgb(34, 33, 33);
 }
 
-
-button.button.inicio {
-    height: 70px !important;
-}
-
-button.button.solid {
+button.button.solid,
+a.button.solid {
     height: 50px;
     width: 100%;
     font-size: 1.2rem;

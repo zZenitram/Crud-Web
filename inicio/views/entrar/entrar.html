@@ -1,0 +1,66 @@
+<section class="main-container-entrar">
+
+    <div class="container-entrar">
+
+        <div class="container-voltar">
+            <!-- Botâo (Voltar) -->
+            <a href="#!inicio" class="button solid voltar">
+                <i class='bx bx-left-arrow-alt'></i>
+            </a>
+
+            <span class="titulo">Voltar</span>
+        </div>
+
+        <!--  Container (Texto de Informações) -->
+        <div class="container-info">
+            <h1 class="titulo">Coloque sua conta</h1>
+            <p class="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore!</p>
+        </div>
+
+        <!-- Container (Inputs) -->
+        <div class="container-inputs">
+
+            <div class="container-inputs-items">
+
+                <!-- Email -->
+                <label for="email-produto" class="label email-produto">Email:
+                    <input type="email" placeholder="Coloque aqui..." class="input email-produto" id="email-produto"
+                        ng-model="produtos.email">
+                </label>
+
+                <!-- Senha -->
+                <label for="senha-produto" class="label senha-produto mb-0">Senha:
+                    <input type="password" placeholder="Coloque aqui..." class="input senha-produto" id="senha-produto"
+                        ng-model="produtos.senha">
+                </label>
+
+                <span class="recuperar">esqueci a senha</span>
+
+                <!-- Enviar -->
+                <div class="container-enviar">
+                    <button id="enviar" ng-click="entrar()">Enviar</button>
+                </div>
+
+                <span class="outras-contas">Outras Contas</span>
+
+                <div class="container-buttons">
+
+                    <!-- Botão Entrar (Goggle) -->
+                    <button class="button entrar">
+                        <i class='bx bxl-google'></i>
+                    </button>
+
+                    <!-- Botão Entrar (Facebook) -->
+                    <button class="button entrar">
+                        <i class='bx bxl-facebook'></i>
+                    </button>
+
+                    <!-- Botão Entrar (Instagran) -->
+                    <button class="button entrar">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
