@@ -1,0 +1,43 @@
+<div class="container-itens" ng-repeat="produto in produtos | filter:search">
+
+    <div class="container-itens-principais">
+
+        <div class="item item-nome">
+            <span class="titulo">Nome:</span>
+            <span class="subtitulo">{{produto.nome}}</span>
+        </div>
+
+        <div class="item arrow">
+            <i class='bx bx-chevron-right arrow'></i>
+        </div>
+    </div>
+
+    <div class="container-itens-secundarios disable">
+
+        <div class="item separator top item-modelo">
+            <span class="titulo">Modelo:</span>
+            <span class="subtitulo">{{produto.modelo}}</span>
+        </div>
+
+        <div class="item separator item-codigo">
+            <span class="titulo">Codigo:</span>
+            <span class="subtitulo">{{produto.codigo}}</span>
+        </div>
+
+        <div class="item separator item-valor">
+            <span class="titulo">Valor:</span>
+            <span class="subtitulo">{{produto.valor}}</span>
+        </div>
+
+        <div class="item separator item-data">
+            <span class="titulo">Data:</span>
+            <span class="subtitulo">{{produto.data}}</span>
+        </div>
+
+        <div class="item item-editar">
+            <button class="button update">
+                <span>Editar</span>
+            </button>
+        </div>
+    </div>
+</div>

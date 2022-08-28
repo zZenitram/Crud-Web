@@ -1,0 +1,53 @@
+{
+    "produtos": [
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Jordan One",
+            "modelo": "Tênis",
+            "valor": "R$ 1300,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "All Star",
+            "modelo": "Tênis",
+            "valor": "R$ 300,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Force",
+            "modelo": "Tênis",
+            "valor": "R$ 700,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Max 90",
+            "modelo": "Tênis",
+            "valor": "R$ 500,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Jordan Five",
+            "modelo": "Tênis",
+            "valor": "R$ 1500,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "Air Max 97",
+            "modelo": "Tênis",
+            "valor": "R$ 600,00",
+            "data": "22/08/2022"
+        },
+        {
+            "codigo": "012b4cs6",
+            "nome": "Super Star",
+            "modelo": "Tênis",
+            "valor": "R$ 400,00",
+            "data": "22/08/2022"
+        }
+    ]
+}

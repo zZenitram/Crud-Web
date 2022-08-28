@@ -1,0 +1,52 @@
+header.container-header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--gray-scale-10);
+    z-index: 20;
+}
+
+header.container-header div.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header.container-header div.header div.container-button,
+header.container-header div.header button.container-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+header.container-header div.header div.container-button div.container-titulo,
+header.container-header div.header button.container-user div.container-titulo {
+    padding: 15px;
+}
+
+button.button.solid.menu {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+div.img.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: rgb(61, 61, 61);
+}
+
+div.img.user i {
+    font-size: 1.4rem;
+    color: aliceblue;
+}

@@ -1,0 +1,16 @@
+div.dropdown-menu {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(28, 28, 28);
+}
+
+div.dropdown-menu button.button.menu {
+    height: 45px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--gray-scale-09);
+    transition: 0.6s;
+}

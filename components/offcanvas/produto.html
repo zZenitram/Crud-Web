@@ -1,0 +1,59 @@
+<!-- Menu Cadastrar -->
+<div class="offcanvas offcanvas-end" id="cadastrar">
+
+    <div class="offcanvas-container">
+
+        <!-- Botâo (Close) -->
+        <button class="button close" data-bs-dismiss="offcanvas">
+            <i class='bx bxs-x-circle'></i>
+        </button>
+
+        <!-- Container (header) -->
+        <header class="container-offcanvas-header">
+            <h2 class="titulo">Cadastrar</h2>
+            <p class="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore!</p>
+        </header>
+
+        <!-- Container (Inputs) -->
+        <div class="container-inputs">
+
+            <div class="container-inputs-items">
+
+                <!-- Codigo -->
+                <label for="codigo-produto" class="label codigo-produto">Codigo:
+                    <input type="text" placeholder="Coloque aqui..." class="input codigo-produto" id="codigo-produto"
+                        ng-model="produtos.codigo">
+                </label>
+
+                <!-- Nome -->
+                <label for="nome-produto" class="label nome-produto">Nome do Produto:
+                    <input type="text" placeholder="Coloque aqui..." class="input nome-produto" id="nome-produto"
+                        ng-model="produtos.nome">
+                </label>
+
+                <!-- Modelo -->
+                <label for="modelo-produto" class="label modelo-produto">Modelo:
+                    <input type="text" placeholder="Coloque aqui..." class="input modelo-produto" id="modelo-produto"
+                        ng-model="produtos.modelo">
+                </label>
+
+                <!-- Valor -->
+                <label for="valor-produto" class="label valor-produto">Valor:
+                    <input type="text" placeholder="Coloque aqui..." class="input valor-produto" id="valor-produto"
+                        ng-model="produtos.valor">
+                </label>
+
+                <!-- Data -->
+                <label for="data-produto" class="label data-produto">Data da Inserção:
+                    <input type="text" placeholder="Coloque aqui..." class="input data-produto" id="data-produto"
+                        ng-model="produtos.data">
+                </label>
+
+                <!-- Enviar -->
+                <div class="container-enviar">
+                    <button id="enviar" ng-click="setProduto(produtos)">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

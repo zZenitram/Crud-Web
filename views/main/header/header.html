@@ -1,0 +1,37 @@
+<header class="container-header">
+
+    <!-- Cabeçalho -->
+    <div class="header">
+
+        <!-- Container (Button) -->
+        <div class="container-button">
+
+            <!-- Botão do Menu -->
+            <button class="button solid menu" ng-click="menu()">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- titulo -->
+            <div class="container-titulo">
+                <span class="titulo">Menu</span>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="container-user" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+
+                <!-- titulo -->
+                <div class="container-titulo">
+                    <span class="titulo">{{usuario.nome}} {{usuario.sobrenome}}</span>
+                </div>
+
+                <!-- Imagem do Usuario -->
+                <div class="img user">
+                    <i class='bx bxs-user'></i>
+                </div>
+            </button>
+
+            <div ng-include="dropdown.url"></div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,44 @@
+section.container-cadastrar {
+    padding: 20px;
+}
+
+section.container-cadastrar div.container-cadastrar-cartao {
+    padding: 30px;
+    border-radius: 1rem;
+    background-color: var(--color-01);
+}
+
+section.container-cadastrar div.container-cadastrar-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+section.container-cadastrar div.container-cadastrar-button button.button {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    color: var(--gray-scale-00);
+    background-color: rgb(134, 194, 254);
+}
+
+section.container-cadastrar div.container-cadastrar-button button.button:hover {
+    transition: 0.3s;
+    color: rgb(186, 223, 243);
+    background-color: rgb(34, 127, 203);
+}
+
+section.container-cadastrar div.container-cadastrar-cartao div.container-cadastrar-info h1.titulo {
+    width: 100%;
+    font-size: 1.85rem;
+    color: var(--gray-scale-00);
+}
+
+section.container-cadastrar div.container-cadastrar-cartao div.container-cadastrar-info p.subtitulo {
+    font-size: 0.8rem;
+    color: var(--gray-scale-02)
+}

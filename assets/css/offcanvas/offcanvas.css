@@ -1,0 +1,79 @@
+/* Offcanvas (Menu) */
+div.offcanvas {
+    overflow-y: auto;
+    background-color: var(--gray-scale-09);
+}
+
+div.offcanvas-container {
+    overflow-y: auto;
+    padding: 0 30px 30px 30px;
+}
+
+div.offcanvas header.container-offcanvas-header {
+    margin-top: 100px;
+}
+
+div.offcanvas header.container-offcanvas-header:after {
+    content: "";
+    display: flex;
+    width: 60%;
+    height: 20px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.081);
+}
+
+div.offcanvas header.container-offcanvas-header h2.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--gray-scale-00);
+}
+
+div.offcanvas header.container-offcanvas-header p.subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.15rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--gray-scale-04);
+}
+
+div.container-inputs div.container-inputs-items div.container-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+div.container-inputs div.container-inputs-items div.container-enviar button {
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 0.7rem;
+    color: var(--gray-scale-00);
+    background-color: rgb(134, 194, 254);
+}
+
+button.button.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 100%;
+    transform: translate(-50%, -50%) !important;
+    background-color: var(--color-01);
+}
+
+button.button.close i {
+    font-size: 27px;
+    line-height: 32px;
+}
